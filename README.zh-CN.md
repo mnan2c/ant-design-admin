@@ -19,17 +19,7 @@
 - :1234: **Mock 数据**：实用的本地数据调试方案
 - :white_check_mark: **UI 测试**：自动化测试保障前端产品质量
 
-## 使用
-
-### 使用命令行
-```bash
-$ git clone https://github.com/ant-design/ant-design-pro.git --depth=1
-$ cd ant-design-pro
-$ npm install
-$ npm start         # 访问 http://localhost:8000
-```
-
-### 使用 docker
+## 使用 docker
 
 ```bash
 // dev
