@@ -1,4 +1,4 @@
-English | [简体中文](./README.zh-CN.md) | [Русский](./README.ru-RU.md)
+English | [简体中文](./README.zh-CN.md)
 
 <h1 align="center">Ant Design Pro</h1>
 
@@ -22,9 +22,6 @@ An out-of-box UI solution for enterprise applications as a React boilerplate.
 - ChangeLog: http://pro.ant.design/docs/changelog
 - FAQ: http://pro.ant.design/docs/faq
 - Mirror Site in China: http://ant-design-pro.gitee.io
-
-## 2.0 Released Now! 🎉🎉🎉
-[Announcing Ant Design Pro 2.0.0](https://medium.com/ant-design/beautiful-and-powerful-ant-design-pro-2-0-release-51358da5af95)
 
 ## Translation Recruitment :loudspeaker:
 
@@ -91,17 +88,17 @@ $ npm start         # visit http://localhost:8000
 ### Use by docker
 
 ```bash
-// dev 
+// dev
 $ npm run docker:dev
 
-// build 
+// build
 $ npm run docker:build
 
 
-// production dev 
+// production dev
 $ npm run docker-prod:dev
 
-// production build 
+// production build
 $ npm run docker-prod:build
 ```
 
