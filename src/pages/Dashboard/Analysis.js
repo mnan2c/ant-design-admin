@@ -14,16 +14,7 @@ import {
   Menu,
   Dropdown,
 } from 'antd';
-import {
-  ChartCard,
-  MiniArea,
-  MiniBar,
-  MiniProgress,
-  Field,
-  Bar,
-  Pie,
-  TimelineChart,
-} from '@/components/Charts';
+import { ChartCard, MiniArea, MiniBar, MiniProgress, Field, Bar, Pie } from '@/components/Charts';
 import Trend from '@/components/Trend';
 import NumberInfo from '@/components/NumberInfo';
 import numeral from 'numeral';
@@ -62,7 +53,6 @@ class Analysis extends Component {
 
   state = {
     salesType: 'all',
-    currentTabKey: '',
     rangePickerValue: getTimeDistance('year'),
     loading: true,
   };
@@ -93,12 +83,6 @@ class Analysis extends Component {
   handleChangeSalesType = e => {
     this.setState({
       salesType: e.target.value,
-    });
-  };
-
-  handleTabChange = key => {
-    this.setState({
-      currentTabKey: key,
     });
   };
 
@@ -140,15 +124,13 @@ class Analysis extends Component {
   }
 
   render() {
-    const { rangePickerValue, salesType, loading: propsLoding, currentTabKey } = this.state;
+    const { rangePickerValue, salesType, loading: propsLoding } = this.state;
     const { chart, loading: stateLoading } = this.props;
     const {
       visitData,
       visitData2,
       salesData,
       searchData,
-      offlineData,
-      offlineChartData,
       salesTypeData,
       salesTypeDataOnline,
       salesTypeDataOffline,
@@ -238,38 +220,6 @@ class Analysis extends Component {
         align: 'right',
       },
     ];
-
-    const activeKey = currentTabKey || (offlineData[0] && offlineData[0].name);
-
-    const CustomTab = ({ data, currentTabKey: currentKey }) => (
-      <Row gutter={8} style={{ width: 138, margin: '8px 0' }}>
-        <Col span={12}>
-          <NumberInfo
-            title={data.name}
-            subTitle={
-              <FormattedMessage
-                id="app.analysis.conversion-rate"
-                defaultMessage="Conversion Rate"
-              />
-            }
-            gap={2}
-            total={`${data.cvr * 100}%`}
-            theme={currentKey !== data.name && 'light'}
-          />
-        </Col>
-        <Col span={12} style={{ paddingTop: 36 }}>
-          <Pie
-            animate={false}
-            color={currentKey !== data.name && '#BDE4FF'}
-            inner={0.55}
-            tooltip={false}
-            margin={[0, 0, 0, 0]}
-            percent={data.cvr * 100}
-            height={64}
-          />
-        </Col>
-      </Row>
-    );
 
     const topColResponsiveProps = {
       xs: 24,
