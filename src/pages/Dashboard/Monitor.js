@@ -42,81 +42,6 @@ class Monitor extends PureComponent {
     return (
       <GridContent>
         <Row gutter={24}>
-          <Col xl={18} lg={24} md={24} sm={24} xs={24} style={{ marginBottom: 24 }}>
-            <Card
-              title={
-                <FormattedMessage
-                  id="app.monitor.trading-activity"
-                  defaultMessage="Real-Time Trading Activity"
-                />
-              }
-              bordered={false}
-            >
-              <Row>
-                <Col md={6} sm={12} xs={24}>
-                  <NumberInfo
-                    subTitle={
-                      <FormattedMessage
-                        id="app.monitor.total-transactions"
-                        defaultMessage="Total transactions today"
-                      />
-                    }
-                    suffix="元"
-                    total={numeral(124543233).format('0,0')}
-                  />
-                </Col>
-                <Col md={6} sm={12} xs={24}>
-                  <NumberInfo
-                    subTitle={
-                      <FormattedMessage
-                        id="app.monitor.sales-target"
-                        defaultMessage="Sales target completion rate"
-                      />
-                    }
-                    total="92%"
-                  />
-                </Col>
-                <Col md={6} sm={12} xs={24}>
-                  <NumberInfo
-                    subTitle={
-                      <FormattedMessage
-                        id="app.monitor.remaining-time"
-                        defaultMessage="Remaining time of activity"
-                      />
-                    }
-                    total={<CountDown target={targetTime} />}
-                  />
-                </Col>
-                <Col md={6} sm={12} xs={24}>
-                  <NumberInfo
-                    subTitle={
-                      <FormattedMessage
-                        id="app.monitor.total-transactions-per-second"
-                        defaultMessage="Total transactions per second"
-                      />
-                    }
-                    suffix="元"
-                    total={numeral(234).format('0,0')}
-                  />
-                </Col>
-              </Row>
-              <div className={styles.mapChart}>
-                <Tooltip
-                  title={
-                    <FormattedMessage
-                      id="app.monitor.waiting-for-implementation"
-                      defaultMessage="Waiting for implementation"
-                    />
-                  }
-                >
-                  <img
-                    src="https://gw.alipayobjects.com/zos/rmsportal/HBWnDEUXCnGnGrRfrpKa.png"
-                    alt="map"
-                  />
-                </Tooltip>
-              </div>
-            </Card>
-          </Col>
           <Col xl={6} lg={24} md={24} sm={24} xs={24}>
             <Card
               title={
@@ -143,8 +68,6 @@ class Monitor extends PureComponent {
               />
             </Card>
           </Col>
-        </Row>
-        <Row gutter={24}>
           <Col xl={12} lg={24} sm={24} xs={24}>
             <Card
               title={
@@ -201,6 +124,8 @@ class Monitor extends PureComponent {
               </Row>
             </Card>
           </Col>
+        </Row>
+        <Row gutter={24}>
           <Col xl={6} lg={12} sm={24} xs={24}>
             <Card
               title={
