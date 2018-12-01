@@ -10,7 +10,6 @@ $ npm install express --save-dev
 - devDependencies: 指定项目开发所需要的模块
 - peerDependencies: 用来供插件指定其所需要的主工具的版本, npm 3.0版开始，peerDependencies不再会默认安装了
 - bin: 用来指定各个内部命令对应的可执行文件的位置。
-```
 ### Dependencies
 - [@antv/data-set](https://antv.alipay.com/zh-cn/index.html#__products)
 - [@babel/runtime](https://babeljs.io/docs/en/)
