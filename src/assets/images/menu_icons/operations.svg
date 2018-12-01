@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Symbols/Icon/Menu/Operations</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="14" height="14"></rect>
+    </defs>
+    <g id="Symbols/Icon/Menu/Operations" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Rectangle-4" fill-opacity="0" fill="#FFFFFF" xlink:href="#path-1"></use>
+        <path d="M7,0 L0,2.15384615 L0,11.8461538 L7,14 L14,11.8461538 L14,2.15384615 L7,0 Z M0.931510417,11.0541779 L0.926041667,3.76923077 L6.53330417,5.49454567 L6.53331875,12.7777933 L0.931510417,11.0541779 Z M0.926041667,2.69230769 L3.26307917,1.97322596 L9.33333333,3.8409976 L9.33333333,3.84326923 L7,4.56122356 L0.926041667,2.69230769 Z M13.0684896,11.0541779 L7.46668125,12.7777933 L7.46669583,5.49454567 L9.33333333,4.92019231 L9.33333333,7.54519231 L11.2,6.97080529 L11.2,4.34583894 L13.0739583,3.76923077 L13.0684896,11.0541779 Z M11.2,3.26891587 L11.2,3.2668125 L5.12945417,1.39895673 L7,0.823408654 L13.0739583,2.69230769 L11.2,3.26891587 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)"></path>
+    </g>
+</svg>

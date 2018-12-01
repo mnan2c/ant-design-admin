@@ -42,6 +42,18 @@ export default [
         ],
       },
       {
+        path: '/basicinfo',
+        name: 'basicinfo',
+        icon: 'dashboard',
+        routes: [
+          {
+            path: '/basicinfo/warehouse',
+            name: 'warehouse',
+            component: './BasicInfo/Warehouse',
+          },
+        ],
+      },
+      {
         name: 'exception',
         icon: 'warning',
         path: '/exception',

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Symbols/Icon/Menu/Customer</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="14" height="14"></rect>
+        <path d="M13,0 L1,0 L1,2 L13,2 L13,0 Z M14,8.92307692 L14,7.23076923 L13.2222222,3 L0.777777778,3 L0,7.23076923 L0,8.92307692 L0.777777778,8.92307692 L0.777777778,14 L8.55555556,14 L8.55555556,8.92307692 L11.6666667,8.92307692 L11.6666667,14 L13.2222222,14 L13.2222222,8.92307692 L14,8.92307692 Z M7,11.8888889 L2.33333333,11.8888889 L2.33333333,8.77777778 L7,8.77777778 L7,11.8888889 Z" id="path-3"></path>
+    </defs>
+    <g id="Symbols/Icon/Menu/Customer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Rectangle-4" fill-opacity="0" fill="#FFFFFF" xlink:href="#path-1"></use>
+        <mask id="mask-4" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <use id="Shape" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-3"></use>
+    </g>
+</svg>
