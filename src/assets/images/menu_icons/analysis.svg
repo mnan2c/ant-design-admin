@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Symbols/Icon/Menu/Analysis</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="14" height="14"></rect>
+        <path d="M2.1,4.9 L4.9,4.9 L4.9,11.9 L2.1,11.9 L2.1,4.9 Z M1.4,12.6 L1.4,0 L0,0 L0,12.6 C0,13.37 0.63,14 1.4,14 L14,14 L14,12.6 L1.4,12.6 Z M10.5,7.7 L13.3,7.7 L13.3,11.9 L10.5,11.9 L10.5,7.7 Z M6.3,0.7 L9.1,0.7 L9.1,11.9 L6.3,11.9 L6.3,0.7 Z" id="path-3"></path>
+    </defs>
+    <g id="Symbols/Icon/Menu/Analysis" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Rectangle-4" fill-opacity="0" fill="#FFFFFF" xlink:href="#path-1"></use>
+        <mask id="mask-4" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <use id="Shape" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-3"></use>
+    </g>
+</svg>

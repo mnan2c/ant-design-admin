@@ -113,8 +113,12 @@ $ npm install express --save-dev
 - [enzyme](https://github.com/airbnb/enzyme): react的js测试
 - [tslint](https://palantir.github.io/tslint/#): 检查[TypeScript](https://www.typescriptlang.org/docs/home.html)语法
 - [lint-staged](https://segmentfault.com/a/1190000009546913): 只lint改动的
-- [mockjs](http://mockjs.com/): mock数据，[github wiki](https://github.com/nuysoft/Mock/wiki)
 - [umijs](https://umijs.org/zh/guide/#%E7%89%B9%E6%80%A7)
+#### Mock数据
+- [mockjs](http://mockjs.com/): mock数据，[github wiki](https://github.com/nuysoft/Mock/wiki)
+- [lazy-mock](https://wjkang.github.io/lazy-mock/#/quickstart): 权限控制，mock实际请求
+- [Faker.js](https://github.com/marak/Faker.js/): 可以faker各种具体类型的数据
+- [lowdb](https://github.com/typicode/lowdb): 持久化数据到json文件
 
 ### 参考链接
 - [!!!Node.js的优质库，按github star数量排序，Top10](http://awehunt.com/?tnid=5af1c0b67b4fac67bf3af2b4)
@@ -126,3 +130,4 @@ $ npm install express --save-dev
 - [nodejs cn](http://nodejs.cn/api/)
 - [廖雪峰教程](https://www.liaoxuefeng.com/)
 - [Electron](https://electronjs.org/):  是一个使用 JavaScript, HTML 和 CSS 等 Web 技术创建原生桌面应用程序的框架。[Github](https://github.com/electron/electron)
+- [Koa2](https://demopark.github.io/koa-docs-Zh-CN/)

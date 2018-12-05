@@ -181,3 +181,14 @@ export function formatWan(val) {
 export function isAntdPro() {
   return window.location.hostname === 'preview.pro.ant.design';
 }
+
+// documentation: https://github.com/ljharb/qs
+export function getQueryString(params, ...ignoredAttrs) {
+  const paramscp = _.cloneDeep(params);
+  if (ignoredAttrs && ignoredAttrs.length) {
+    ignoredAttrs.forEach(attr => {
+      paramscp[attr] = undefined;
+    });
+  }
+  return stringify(paramscp, { addQueryPrefix: true });
+}

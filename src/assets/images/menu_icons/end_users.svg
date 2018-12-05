@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Symbols/Icon/Menu/End Users</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="14" height="14"></rect>
+    </defs>
+    <g id="Symbols/Icon/Menu/End-Users" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Rectangle-4" fill-opacity="0" fill="#FFFFFF" xlink:href="#path-1"></use>
+        <path d="M7,0 C3.136,0 0,3.136 0,7 C0,10.864 3.136,14 7,14 C10.864,14 14,10.864 14,7 C14,3.136 10.864,0 7,0 Z M9.527,4.438 C10.276,4.438 10.878,5.04 10.878,5.789 C10.878,6.538 10.276,7.14 9.527,7.14 C8.778,7.14 8.176,6.538 8.176,5.789 C8.169,5.04 8.778,4.438 9.527,4.438 Z M5.327,3.332 C6.237,3.332 6.979,4.074 6.979,4.984 C6.979,5.894 6.237,6.636 5.327,6.636 C4.417,6.636 3.675,5.894 3.675,4.984 C3.675,4.067 4.41,3.332 5.327,3.332 Z M5.327,9.723 L5.327,12.348 C3.647,11.823 2.317,10.528 1.729,8.876 C2.464,8.092 4.298,7.693 5.327,7.693 C5.698,7.693 6.167,7.749 6.657,7.847 C5.509,8.456 5.327,9.261 5.327,9.723 Z M7,12.6 C6.811,12.6 6.629,12.593 6.447,12.572 L6.447,9.723 C6.447,8.729 8.505,8.232 9.527,8.232 C10.276,8.232 11.571,8.505 12.215,9.037 C11.396,11.116 9.373,12.6 7,12.6 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)"></path>
+    </g>
+</svg>

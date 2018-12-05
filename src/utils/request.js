@@ -4,6 +4,13 @@ import router from 'umi/router';
 import hash from 'hash.js';
 import { isAntdPro } from './utils';
 
+// env: dev or docker employ
+const apiRootUrl =
+  process.env.NODE_ENV === 'development'
+    ? ''
+    : // ? process.env.WEBAPP_BACKEND_URL
+      '@@WEBAPP-BACKEND-URL@@';
+
 const codeMessage = {
   200: '服务器成功返回请求的数据。',
   201: '新建或修改数据成功。',
@@ -64,15 +71,16 @@ const cachedSave = (response, hashcode) => {
  * @return {object}           An object containing either "data" or "err"
  */
 export default function request(url, option) {
+  const requestUrl = apiRootUrl ? apiRootUrl + url : url;
   const options = {
     expirys: isAntdPro(),
     ...option,
   };
   /**
-   * Produce fingerprints based on url and parameters
-   * Maybe url has the same parameters
+   * Produce fingerprints based on requestUrl and parameters
+   * Maybe requestUrl has the same parameters
    */
-  const fingerprint = url + (options.body ? JSON.stringify(options.body) : '');
+  const fingerprint = requestUrl + (options.body ? JSON.stringify(options.body) : '');
   const hashcode = hash
     .sha256()
     .update(fingerprint)
@@ -118,7 +126,7 @@ export default function request(url, option) {
       sessionStorage.removeItem(`${hashcode}:timestamp`);
     }
   }
-  return fetch(url, newOptions)
+  return fetch(requestUrl, newOptions)
     .then(checkStatus)
     .then(response => cachedSave(response, hashcode))
     .then(response => {

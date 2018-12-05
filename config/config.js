@@ -54,6 +54,10 @@ export default {
   },
   define: {
     APP_TYPE: process.env.APP_TYPE || '',
+    'process.env.WEBAPP_BACKEND_URL':
+      (process.env.MOCK === 'none' && process.env.WEBAPP_BACKEND_URL) ||
+      (!process.env.WEBAPP_BACKEND_URL && 'http://localhost:8080') ||
+      '',
   },
   // 路由配置
   routes: pageRoutes,
