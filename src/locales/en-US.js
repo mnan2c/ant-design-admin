@@ -202,24 +202,62 @@ export default {
   'app.setting.production.hint':
     'Setting panel shows in development environment only, please manually modify',
 
-  // basic infomation
-  'menu.basicinfo': 'Basic Information',
-  'menu.basicinfo.warehouse': 'Warehouse Management',
+  // menu
+  'menu.storage': 'Storage Management',
+  'menu.storage.warehouse': 'Warehouse Management',
+  'menu.storage.supplier': 'Supplier Management',
+  'menu.storage.customer': 'Customer Management',
+  'menu.storage.instorage': 'InStorage Management',
+  'menu.storage.outstorage': 'OutStorage Management',
+  'menu.storage.purchase': 'Purchase Management',
+  'menu.storage.sales': 'Sales Management',
+  'menu.storage.inventory': 'Inventory Management',
 
   // table column
   id: 'ID',
+  productId: 'Product ID',
+  orderId: 'Order ID',
+  customerId: 'Customer ID',
   key: 'Key',
+  name: 'Name',
+  productName: 'Product Name',
+  customer: 'Customer',
+  supplier: 'Supplier',
+  auditor: 'Auditor',
 
   region: 'Region',
   address: 'Address',
 
   date: 'Date',
+  createdDate: 'Created Date',
+  auditDate: 'Audit Date',
+
+  status: 'Status',
+  auditStatus: 'Audit Status',
 
   type: 'Type',
+  amount: 'Amount',
+  totalAmount: 'Total Amount',
+  unit: 'Unit',
+  unitPrice: 'Unit Price',
 
   department: 'Department',
 
   contact: 'Contact',
   email: 'Email',
   phone: 'Phone',
+  description: 'Description',
+
+  // operations
+  'operation.create': 'Create',
+  'operation.edit': 'Edit',
+  'operation.delete': 'Delete',
+  'operation.search': 'Search',
+
+  // filter
+  all: 'All',
+
+  // Supplier
+  'supplier.type.virtual': 'Virtual',
+  'supplier.type.cooperation': 'Cooperation',
 };

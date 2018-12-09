@@ -42,14 +42,49 @@ export default [
         ],
       },
       {
-        path: '/basicinfo',
-        name: 'basicinfo',
+        path: '/storage',
+        name: 'storage',
         icon: 'dashboard',
         routes: [
           {
-            path: '/basicinfo/warehouse',
+            path: '/storage/warehouse',
             name: 'warehouse',
-            component: './BasicInfo/Warehouse',
+            component: './Storage/Warehouse',
+          },
+          {
+            path: '/storage/supplier',
+            name: 'supplier',
+            component: './Storage/Supplier',
+          },
+          {
+            path: '/storage/customer',
+            name: 'customer',
+            component: './Storage/Customer',
+          },
+          {
+            path: '/storage/instorage',
+            name: 'instorage',
+            component: './Storage/InStorage',
+          },
+          {
+            path: '/storage/outstorage',
+            name: 'outstorage',
+            component: './Storage/OutStorage',
+          },
+          {
+            path: '/storage/purchase',
+            name: 'purchase',
+            component: './Storage/Purchase',
+          },
+          {
+            path: '/storage/sales',
+            name: 'sales',
+            component: './Storage/Sales',
+          },
+          {
+            path: '/storage/inventory',
+            name: 'inventory',
+            component: './Storage/Inventory',
           },
         ],
       },

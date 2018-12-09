@@ -1,0 +1,21 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~@/utils/utils.less';
+
+.extraContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.extraContentSearch {
+  margin: 0 16px;
+  width: 272px;
+}
+
+@media screen and (max-width: @screen-sm) {
+  .standardList {
+    .extraContentSearch {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+}

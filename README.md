@@ -1,15 +1,11 @@
 ### package.json
 ```js
-$ npm init //初始化一个package.json
+//初始化一个package.json
+$ npm init
 //--save参数表示将该模块写入dependencies属性，--save-dev表示将该模块写入devDependencies属性
 $ npm install express --save
 $ npm install express --save-dev
 ```
-- scripts: 指定了运行脚本命令的npm命令行缩写
-- dependencies: 指定了项目运行所依赖的模块，
-- devDependencies: 指定项目开发所需要的模块
-- peerDependencies: 用来供插件指定其所需要的主工具的版本, npm 3.0版开始，peerDependencies不再会默认安装了
-- bin: 用来指定各个内部命令对应的可执行文件的位置。
 ### Dependencies
 #### 应用级别
 - [expressjs](https://expressjs.com/zh-cn/resources/middleware.html)
@@ -96,7 +92,6 @@ $ npm install express --save-dev
 - [ReactTraining](https://github.com/ReactTraining)
 - [react-router](https://reacttraining.com/react-router/core/api/Router)
 - [Helmet](https://helmetjs.github.io/#)：抵御一些比较常见的 WEB 安全隐患，它其实是将多个安全中间件集中到了一起，大部分都是对于 HTTP Header 的操作
-- [waveform-data](https://www.npmjs.com/package/waveform-data)：读入音频文件生成波形图
 - [lunar-calendar](https://www.npmjs.com/package/lunar-calendar)：传入日期，即可获取较为详细的农历数据
 - [internal-ip](https://github.com/sindresorhus/internal-ip): 获取IP地址
 - [ipp](https://github.com/williamkapke/ipp): Internet 打印机协议
@@ -117,8 +112,6 @@ $ npm install express --save-dev
 #### Mock数据
 - [mockjs](http://mockjs.com/): mock数据，[github wiki](https://github.com/nuysoft/Mock/wiki)
 - [lazy-mock](https://wjkang.github.io/lazy-mock/#/quickstart): 权限控制，mock实际请求
-- [Faker.js](https://github.com/marak/Faker.js/): 可以faker各种具体类型的数据
-- [lowdb](https://github.com/typicode/lowdb): 持久化数据到json文件
 
 ### 参考链接
 - [!!!Node.js的优质库，按github star数量排序，Top10](http://awehunt.com/?tnid=5af1c0b67b4fac67bf3af2b4)

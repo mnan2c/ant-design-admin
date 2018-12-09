@@ -1,35 +1,21 @@
 import React from 'react';
-import Link from 'umi/link';
-import { Card, Spin } from 'antd';
+// import Link from 'umi/link';
+import { Card, Spin, Button } from 'antd';
 import { formatMessage, FormattedMessage } from 'umi/locale';
 
 import CTable from '@/components/Clemon/CTable';
 import CEmptyPlaceholder from '@/components/Clemon/CEmptyPlaceholder';
-import { queryWarehouses } from '@/services/basicinfo/warehouse';
-// import { convertDateTime } from '@/utils/utils';
+import { queryCustomers } from '@/services/storage/customer';
 import PageHeaderWrapper from '@/components/PageHeaderWrapper';
 
 const tableColumns = [
   {
     title: formatMessage({ id: 'id' }),
     dataIndex: 'id',
-    // render: (val, item) => <Link to={`/management/programmes/${item.id}`}>{val}</Link>,
   },
   {
-    title: formatMessage({ id: 'region' }),
-    dataIndex: 'region',
-  },
-  {
-    title: formatMessage({ id: 'date' }),
-    dataIndex: 'date',
-  },
-  {
-    title: formatMessage({ id: 'type' }),
-    dataIndex: 'type',
-  },
-  {
-    title: formatMessage({ id: 'department' }),
-    dataIndex: 'department',
+    title: formatMessage({ id: 'name' }),
+    dataIndex: 'name',
   },
   {
     title: formatMessage({ id: 'address' }),
@@ -40,16 +26,29 @@ const tableColumns = [
     dataIndex: 'contact',
   },
   {
+    title: formatMessage({ id: 'phone' }),
+    dataIndex: 'cellphoneNumber',
+  },
+  {
+    title: formatMessage({ id: 'description' }),
+    dataIndex: 'description',
+  },
+  {
     title: formatMessage({ id: 'email' }),
     dataIndex: 'email',
   },
   {
-    title: formatMessage({ id: 'phone' }),
-    dataIndex: 'cellphoneNumber',
+    title: formatMessage({ id: 'createdDate' }),
+    dataIndex: 'date',
   },
 ];
 
-class Warehouse extends React.PureComponent {
+// search: id, name, type, phone
+// export
+// tabs
+// actions: edit, more
+// inline edit
+class Customer extends React.PureComponent {
   constructor(props) {
     super(props);
 
@@ -92,7 +91,7 @@ class Warehouse extends React.PureComponent {
   refreshList() {
     const { pagination } = this.state;
     this.setState({ loading: true });
-    queryWarehouses({
+    queryCustomers({
       page: pagination.current - 1,
       size: pagination.pageSize,
       sort: 'createdDate,desc',
@@ -115,11 +114,10 @@ class Warehouse extends React.PureComponent {
       <PageHeaderWrapper>
         <Card
           bordered={false}
-          title={formatMessage({ id: 'menu.basicinfo.warehouse' })}
-          extra={
-            <Link to="/management/programmes/create">
-              <FormattedMessage id="create.new" />
-            </Link>
+          title={
+            <Button icon="plus" type="primary" onClick={() => this.handleModalVisible(true)}>
+              <FormattedMessage id="operation.create" />
+            </Button>
           }
         >
           <Spin spinning={loading}>
@@ -140,4 +138,4 @@ class Warehouse extends React.PureComponent {
   }
 }
 
-export default Warehouse;
+export default Customer;

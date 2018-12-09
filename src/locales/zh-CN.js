@@ -203,23 +203,63 @@ export default {
     '配置栏只在开发环境用于预览，生产环境不会展现，请拷贝后手动修改配置文件',
 
   // basic infomation
-  'menu.basicinfo': '基本信息',
-  'menu.basicinfo.warehouse': '仓库管理',
+  'menu.storage': '仓储管理',
+  'menu.storage.warehouse': '仓库管理',
+  'menu.storage.supplier': '供应商管理',
+  'menu.storage.customer': '客户管理',
+  'menu.storage.instorage': '入库管理',
+  'menu.storage.outstorage': '出库管理',
+  'menu.storage.purchase': '采购管理',
+  'menu.storage.sales': '销售管理',
+  'menu.storage.inventory': '库存管理',
 
   // table column
   id: 'ID',
+  productId: '产品ID',
+  orderId: '订单ID',
+  customerId: '客户ID',
   key: '键值',
+  name: '名称',
+  productName: '产品名称',
+  customer: '客户',
+  supplier: '供应商',
+  auditor: '审核人',
 
   region: '地区',
   address: '地址',
 
   date: '日期',
+  createdDate: '创建日期',
+  auditDate: '审核日期',
+
+  status: '状态',
+  auditStatus: '审核状态',
 
   type: '类型',
+  amount: '数量',
+  totalAmount: '总金额',
+  unit: '单位',
+  unitPrice: '单价',
 
   department: '部门',
 
   contact: '联系人',
   email: '邮箱',
   phone: '电话',
+  description: '描述',
+
+  warehouse: '仓库',
+
+  // operations
+  'operation.create': '新建',
+  'operation.edit': '编辑',
+  'operation.delete': '删除',
+  'operation.search': '查询',
+
+  // filter
+  all: '全部',
+
+  // Supplier
+  'supplier.type.virtual': '虚拟供应商',
+  'supplier.type.cooperation': '合作供应商',
 };
