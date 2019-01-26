@@ -7,6 +7,7 @@ import CTable from '@/components/Clemon/CTable';
 import CEmptyPlaceholder from '@/components/Clemon/CEmptyPlaceholder';
 import { queryInventories } from '@/services/storage/inventory';
 import PageHeaderWrapper from '@/components/PageHeaderWrapper';
+import { renderTagCol } from '@/utils/utils';
 
 const tableColumns = [
   {
@@ -20,6 +21,22 @@ const tableColumns = [
   {
     title: formatMessage({ id: 'type' }),
     dataIndex: 'type',
+    render: data => renderTagCol({ data, type: 'tag' }),
+    filters: [
+      {
+        text: '豆类',
+        value: '豆类',
+      },
+      {
+        text: '富硒',
+        value: '富硒',
+      },
+      {
+        text: '成品',
+        value: '成品',
+      },
+    ],
+    onFilter: (value, record) => record.type.indexOf(value) === 0,
   },
   {
     title: formatMessage({ id: 'warehouse' }),
@@ -28,10 +45,24 @@ const tableColumns = [
   {
     title: formatMessage({ id: 'amount' }),
     dataIndex: 'amount',
+    defaultSortOrder: 'descend',
+    sorter: (a, b) => a.amount - b.amount,
   },
   {
     title: formatMessage({ id: 'unit' }),
     dataIndex: 'unit',
+    render: data => renderTagCol({ data, type: 'tag' }),
+    filters: [
+      {
+        text: '托',
+        value: '托',
+      },
+      {
+        text: '袋',
+        value: '袋',
+      },
+    ],
+    onFilter: (value, record) => record.unit.indexOf(value) === 0,
   },
 ];
 
@@ -107,8 +138,12 @@ class Customer extends React.PureComponent {
         <Card
           bordered={false}
           title={
-            <Button icon="plus" type="primary" onClick={() => this.handleModalVisible(true)}>
-              <FormattedMessage id="operation.create" />
+            <Button
+              icon="plus"
+              type="primary"
+              // onClick={() => this.handleModalVisible(true)}
+            >
+              <FormattedMessage id="create" />
             </Button>
           }
         >

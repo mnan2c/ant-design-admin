@@ -17,6 +17,11 @@ export default {
   'component.noticeIcon.clear': 'Clear',
   'component.noticeIcon.cleared': 'Cleared',
   'component.noticeIcon.empty': 'No notifications',
+  'menu.home': 'Home',
+  'menu.dashboard': 'Dashboard',
+  'menu.dashboard.analysis': 'Analysis',
+  'menu.dashboard.monitor': 'Monitor',
+  'menu.dashboard.workplace': 'Workplace',
   'menu.list': 'List',
   'menu.list.searchtable': 'Search Table',
   'menu.list.basiclist': 'Basic List',
@@ -203,12 +208,10 @@ export default {
     'Setting panel shows in development environment only, please manually modify',
 
   // menu
+  'menu.dashboard.components': 'Components',
   'menu.storage': 'Storage Management',
-  'menu.storage.warehouse': 'Warehouse Management',
   'menu.storage.supplier': 'Supplier Management',
   'menu.storage.customer': 'Customer Management',
-  'menu.storage.instorage': 'InStorage Management',
-  'menu.storage.outstorage': 'OutStorage Management',
   'menu.storage.purchase': 'Purchase Management',
   'menu.storage.sales': 'Sales Management',
   'menu.storage.inventory': 'Inventory Management',
@@ -249,13 +252,17 @@ export default {
   description: 'Description',
 
   // operations
-  'operation.create': 'Create',
-  'operation.edit': 'Edit',
-  'operation.delete': 'Delete',
-  'operation.search': 'Search',
+  create: 'Create',
+  edit: 'Edit',
+  delete: 'Delete',
+  search: 'Search',
+  reset: 'Reset',
 
   // filter
   all: 'All',
+
+  // fallback text
+  nodata: 'No Data',
 
   // Supplier
   'supplier.type.virtual': 'Virtual',

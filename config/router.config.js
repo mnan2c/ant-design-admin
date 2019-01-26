@@ -39,18 +39,18 @@ export default [
             name: 'workplace',
             component: './Dashboard/Workplace',
           },
+          {
+            path: '/dashboard/components',
+            name: 'components',
+            component: './Dashboard/Components',
+          },
         ],
       },
       {
         path: '/storage',
         name: 'storage',
-        icon: 'dashboard',
+        icon: 'shop',
         routes: [
-          {
-            path: '/storage/warehouse',
-            name: 'warehouse',
-            component: './Storage/Warehouse',
-          },
           {
             path: '/storage/supplier',
             name: 'supplier',
@@ -60,16 +60,6 @@ export default [
             path: '/storage/customer',
             name: 'customer',
             component: './Storage/Customer',
-          },
-          {
-            path: '/storage/instorage',
-            name: 'instorage',
-            component: './Storage/InStorage',
-          },
-          {
-            path: '/storage/outstorage',
-            name: 'outstorage',
-            component: './Storage/OutStorage',
           },
           {
             path: '/storage/purchase',
@@ -88,35 +78,35 @@ export default [
           },
         ],
       },
-      {
-        name: 'exception',
-        icon: 'warning',
-        path: '/exception',
-        routes: [
-          // exception
-          {
-            path: '/exception/403',
-            name: 'not-permission',
-            component: './Exception/403',
-          },
-          {
-            path: '/exception/404',
-            name: 'not-find',
-            component: './Exception/404',
-          },
-          {
-            path: '/exception/500',
-            name: 'server-error',
-            component: './Exception/500',
-          },
-          {
-            path: '/exception/trigger',
-            name: 'trigger',
-            hideInMenu: true,
-            component: './Exception/TriggerException',
-          },
-        ],
-      },
+      // {
+      //   name: 'exception',
+      //   icon: 'warning',
+      //   path: '/exception',
+      //   routes: [
+      //     // exception
+      //     {
+      //       path: '/exception/403',
+      //       name: 'not-permission',
+      //       component: './Exception/403',
+      //     },
+      //     {
+      //       path: '/exception/404',
+      //       name: 'not-find',
+      //       component: './Exception/404',
+      //     },
+      //     {
+      //       path: '/exception/500',
+      //       name: 'server-error',
+      //       component: './Exception/500',
+      //     },
+      //     {
+      //       path: '/exception/trigger',
+      //       name: 'trigger',
+      //       hideInMenu: true,
+      //       component: './Exception/TriggerException',
+      //     },
+      //   ],
+      // },
       {
         name: 'account',
         icon: 'user',

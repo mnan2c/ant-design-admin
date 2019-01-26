@@ -7,7 +7,6 @@
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log",
-    "mock": "node ../scripts/generateMock.js"
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0",

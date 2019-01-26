@@ -7,6 +7,7 @@ import CTable from '@/components/Clemon/CTable';
 import CEmptyPlaceholder from '@/components/Clemon/CEmptyPlaceholder';
 import { querySuppliers } from '@/services/storage/supplier';
 import PageHeaderWrapper from '@/components/PageHeaderWrapper';
+import { renderTagCol } from '@/utils/utils';
 
 import styles from './style.less';
 
@@ -22,10 +23,12 @@ const tableColumns = [
   {
     title: formatMessage({ id: 'name' }),
     dataIndex: 'name',
+    render: data => renderTagCol({ data, type: 'link', url: '/storage/supplier' }),
   },
   {
     title: formatMessage({ id: 'type' }),
     dataIndex: 'type',
+    render: data => renderTagCol({ data, type: 'tag' }),
   },
   {
     title: formatMessage({ id: 'phone' }),
@@ -143,11 +146,15 @@ class Supplier extends React.PureComponent {
         <Card
           bordered={false}
           title={
-            <Button icon="plus" type="primary" onClick={() => this.handleModalVisible(true)}>
-              <FormattedMessage id="operation.create" />
+            <Button
+              icon="plus"
+              type="primary"
+              // onClick={() => this.handleModalVisible(true)}
+            >
+              <FormattedMessage id="create" />
             </Button>
           }
-          extra={<Link to="/management/programmes/create">{extraContent}</Link>}
+          extra={<Link to="/storage/supplier">{extraContent}</Link>}
         >
           <Spin spinning={loading}>
             {!loading && PList.length === 0 ? (
