@@ -7,6 +7,7 @@ import CTable from '@/components/Clemon/CTable';
 import CEmptyPlaceholder from '@/components/Clemon/CEmptyPlaceholder';
 import { queryPurchases } from '@/services/storage/purchase';
 import PageHeaderWrapper from '@/components/PageHeaderWrapper';
+import { renderTagCol } from '@/utils/utils';
 
 const tableColumns = [
   {
@@ -32,6 +33,7 @@ const tableColumns = [
   {
     title: formatMessage({ id: 'unit' }),
     dataIndex: 'unit',
+    render: data => renderTagCol({ data, type: 'tag' }),
   },
   {
     title: formatMessage({ id: 'amount' }),
@@ -122,13 +124,29 @@ class Customer extends React.PureComponent {
 
   render() {
     const { PList, pagination, loading } = this.state;
+
+    // rowSelection object indicates the need for row selection
+    const rowSelection = {
+      onChange: (selectedRowKeys, selectedRows) => {
+        console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
+      },
+      getCheckboxProps: record => ({
+        disabled: record.name === 'Disabled User', // Column configuration not to be checked
+        name: record.name,
+      }),
+    };
+
     return (
       <PageHeaderWrapper>
         <Card
           bordered={false}
           title={
-            <Button icon="plus" type="primary" onClick={() => this.handleModalVisible(true)}>
-              <FormattedMessage id="operation.create" />
+            <Button
+              icon="plus"
+              type="primary"
+              // onClick={() => this.handleModalVisible(true)}
+            >
+              <FormattedMessage id="create" />
             </Button>
           }
         >
@@ -140,6 +158,7 @@ class Customer extends React.PureComponent {
                 dataSource={PList}
                 pagination={pagination}
                 columns={tableColumns}
+                rowSelection={rowSelection}
                 onChange={this.handleTableChange}
               />
             )}

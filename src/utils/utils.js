@@ -2,9 +2,12 @@ import moment from 'moment';
 import React from 'react';
 import nzh from 'nzh/cn';
 import { parse, stringify } from 'qs';
+import _ from 'lodash';
+
+export * from './CUtils';
 
 export function fixedZero(val) {
-  return val * 1 < 10 ? `0${val}` : val;
+  return _.padStart(val, 2, '0');
 }
 
 export function getTimeDistance(type) {

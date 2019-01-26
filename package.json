@@ -10,7 +10,7 @@
   "contributors":[{"name":"Morgan","email":"mnan2c@gmail.com"}],
   "private": true,
   "scripts": {
-    "presite": "node ./scripts/generateMock.js && cd functions && npm install",
+    "presite": "cd functions && npm install",
     "start": "cross-env APP_TYPE=site umi dev",
     "start:no-mock": "cross-env MOCK=none WEBAPP_BACKEND_URL=http://localhost:8080 umi dev",
     "build": "umi build",
@@ -64,7 +64,9 @@
     "react-dom": "^16.5.1",
     "react-fittext": "^1.0.0",
     "react-router-dom": "^4.3.1",
-    "random": "^2.0.12"
+    "random": "^2.0.12",
+    "qr-code-with-logo": "^1.1.0",
+    "text-to-picture": "^1.0.0"
   },
   "devDependencies": {
     "@types/react": "^16.4.16",

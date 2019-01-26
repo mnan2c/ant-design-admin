@@ -18,7 +18,7 @@ export default {
   'component.noticeIcon.cleared': '清空了',
   'component.noticeIcon.empty': '暂无数据',
   'menu.home': '首页',
-  'menu.dashboard': 'Dashboard',
+  'menu.dashboard': '仪表板',
   'menu.dashboard.analysis': '分析页',
   'menu.dashboard.monitor': '监控页',
   'menu.dashboard.workplace': '工作台',
@@ -203,12 +203,10 @@ export default {
     '配置栏只在开发环境用于预览，生产环境不会展现，请拷贝后手动修改配置文件',
 
   // basic infomation
+  'menu.dashboard.components': '组件',
   'menu.storage': '仓储管理',
-  'menu.storage.warehouse': '仓库管理',
   'menu.storage.supplier': '供应商管理',
   'menu.storage.customer': '客户管理',
-  'menu.storage.instorage': '入库管理',
-  'menu.storage.outstorage': '出库管理',
   'menu.storage.purchase': '采购管理',
   'menu.storage.sales': '销售管理',
   'menu.storage.inventory': '库存管理',
@@ -251,13 +249,17 @@ export default {
   warehouse: '仓库',
 
   // operations
-  'operation.create': '新建',
-  'operation.edit': '编辑',
-  'operation.delete': '删除',
-  'operation.search': '查询',
+  create: '新建',
+  edit: '编辑',
+  delete: '删除',
+  search: '查询',
+  reset: '重置',
 
   // filter
   all: '全部',
+
+  // fallback text
+  nodata: '暂无数据',
 
   // Supplier
   'supplier.type.virtual': '虚拟供应商',

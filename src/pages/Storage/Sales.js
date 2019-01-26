@@ -7,6 +7,7 @@ import CTable from '@/components/Clemon/CTable';
 import CEmptyPlaceholder from '@/components/Clemon/CEmptyPlaceholder';
 import { querySales } from '@/services/storage/sales';
 import PageHeaderWrapper from '@/components/PageHeaderWrapper';
+import { renderTagCol } from '@/utils/utils';
 
 const tableColumns = [
   {
@@ -32,6 +33,7 @@ const tableColumns = [
   {
     title: formatMessage({ id: 'unit' }),
     dataIndex: 'unit',
+    render: data => renderTagCol({ data, type: 'tag' }),
   },
   {
     title: formatMessage({ id: 'amount' }),
@@ -127,8 +129,12 @@ class Customer extends React.PureComponent {
         <Card
           bordered={false}
           title={
-            <Button icon="plus" type="primary" onClick={() => this.handleModalVisible(true)}>
-              <FormattedMessage id="operation.create" />
+            <Button
+              icon="plus"
+              type="primary"
+              // onClick={() => this.handleModalVisible(true)}
+            >
+              <FormattedMessage id="create" />
             </Button>
           }
         >
